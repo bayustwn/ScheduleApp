@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SheduleApp</string>
+    <string name="error_load">Error Loading Schedule</string>
 </resources>

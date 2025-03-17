@@ -4,5 +4,6 @@ data class Schedule(
     val id: Int,
     val title: String,
     val desc: String,
-    val dateTime: String,
+    val date: String,
+    val time: String
 )

@@ -53,6 +53,10 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    //Lifecycle
+    implementation (libs.lifecycle.viewmodel.ktx)
+    implementation (libs.androidx.activity.ktx)
+
     //Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)

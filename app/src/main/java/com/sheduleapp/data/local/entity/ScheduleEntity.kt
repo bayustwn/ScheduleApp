@@ -17,8 +17,10 @@ data class ScheduleEntity (
     @ColumnInfo(name = "desc")
     val desc: String,
 
-    @ColumnInfo(name = "time")
-    val dateTime: String,
+    @ColumnInfo(name = "date")
+    val date: String,
 
+    @ColumnInfo(name = "time")
+    val time:String
 
 )
