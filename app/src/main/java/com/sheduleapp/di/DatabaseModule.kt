@@ -7,6 +7,7 @@ import com.sheduleapp.data.local.database.ScheduleDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
@@ -16,7 +17,7 @@ object DatabaseModule {
 
     @Provides
     @Singleton
-    fun provideDatabase(context: Context): ScheduleDatabase {
+    fun provideDatabase(@ApplicationContext context: Context): ScheduleDatabase {
         return Room.databaseBuilder(context, ScheduleDatabase::class.java, "schedule_db").build()
     }
 

@@ -20,7 +20,7 @@ import javax.inject.Inject
 @HiltViewModel
 class ScheduleViewModel @Inject constructor(
     private val scheduleUseCases: ScheduleUseCases,
-    @ApplicationContext private val context: Context
+    context: Context
 ) : ViewModel() {
 
     val nearestSchedule: StateFlow<ScheduleUIState> = scheduleUseCases.getNearestSchedule()

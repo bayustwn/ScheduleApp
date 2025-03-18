@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">SheduleApp</string>
     <string name="error_load">Error Loading Schedule</string>
+    <string name="today_s_schedule">Today\'s Schedule</string>
+    <string name="schedule_title">Schedule Title</string>
+    <string name="add_schedule">add_schedule</string>
 </resources>
