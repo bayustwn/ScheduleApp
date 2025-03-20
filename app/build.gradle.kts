@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("com.google.dagger.hilt.android")
     id("kotlin-kapt")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -31,6 +32,9 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+    buildFeatures{
+        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

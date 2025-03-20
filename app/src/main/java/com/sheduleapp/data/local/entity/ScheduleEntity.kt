@@ -9,7 +9,7 @@ data class ScheduleEntity (
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    val id: Int,
+    val id: Int? = null,
 
     @ColumnInfo(name = "title")
     val title: String,
@@ -17,8 +17,8 @@ data class ScheduleEntity (
     @ColumnInfo(name = "desc")
     val desc: String,
 
-    @ColumnInfo(name = "date")
-    val date: String,
+    @ColumnInfo(name = "day")
+    val day: String,
 
     @ColumnInfo(name = "time")
     val time:String

@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 class RepositoryImpl(private val dao: ScheduleDao) : ScheduleRepository {
-    override fun getNearestSchedule(): Flow<Schedule?> {
+    override fun getNearestSchedule(): Flow<Schedule> {
         val today = Helper.getDateToday()
         val currentTime = Helper.getCurrentTime()
 

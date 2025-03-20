@@ -6,11 +6,11 @@ import java.util.Locale
 
 object Helper {
     fun getDateToday(): String {
-        return SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
+        return SimpleDateFormat("EEEE", Locale.getDefault()).format(Date())
     }
 
     fun getCurrentTime(): String {
-        return SimpleDateFormat("HH:mm:ss", Locale.getDefault()).format(Date())
+        return SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
     }
 
 }

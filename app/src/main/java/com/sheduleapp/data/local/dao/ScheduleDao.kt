@@ -11,10 +11,10 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface ScheduleDao {
 
-    @Query("SELECT * FROM schedule WHERE date = :today AND time  >= :currentTime ORDER BY time ASC LIMIT 1")
+    @Query("SELECT * FROM schedule WHERE day = :today AND time  >= :currentTime ORDER BY time ASC LIMIT 1")
     fun getNearestSchedule(today:String,currentTime: String): Flow<ScheduleEntity>
 
-    @Query("SELECT * FROM schedule ORDER BY date ASC, time ASC")
+    @Query("SELECT * FROM schedule ORDER BY day ASC, time ASC")
     fun getAllSchedule(): Flow<List<ScheduleEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

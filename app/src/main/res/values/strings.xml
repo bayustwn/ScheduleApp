@@ -4,4 +4,11 @@
     <string name="today_s_schedule">Today\'s Schedule</string>
     <string name="schedule_title">Schedule Title</string>
     <string name="add_schedule">add_schedule</string>
+    <string name="schedule_description">Schedule Description</string>
+    <string name="time">Time</string>
+    <string name="list">list_schedule</string>
+    <string name="schedule_time">Day, 00:00</string>
+    <string name="delete_schedule">delete_schedule</string>
+    <string name="no_task_today">No task</string>
+    <string name="error_getting_task">Error getting task</string>
 </resources>

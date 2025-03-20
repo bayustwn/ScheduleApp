@@ -6,11 +6,11 @@ import com.sheduleapp.domain.model.Schedule
 object Mapper {
 
     fun ScheduleEntity.toDomain(): Schedule {
-        return Schedule(id = id, title = title, desc = desc, date = date, time=time)
+        return Schedule(id = id, title = title, desc = desc, day = day, time=time)
     }
 
     fun Schedule.toEntity(): ScheduleEntity {
-        return ScheduleEntity(id = id, title = title, desc = desc, date = date, time=time)
+        return ScheduleEntity(id = id, title = title, desc = desc, day = day, time=time)
     }
 
 }

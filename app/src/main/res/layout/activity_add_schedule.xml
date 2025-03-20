@@ -5,6 +5,76 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".presentation.activity.AddScheduleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/scheduleTitleInputContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/schedule_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/scheduleTitleInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scheduleDescContainer"
+            android:hint="@string/schedule_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scheduleTitleInputContainer">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/scheduleDescInput"
+                android:layout_width="match_parent"
+                android:gravity="top"
+                android:layout_height="200dp"
+                android:inputType="textMultiLine" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/scheduleDescContainer"
+            android:id="@+id/daySelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/daySelect"
+            android:hint="@string/time">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/timeInput"
+                android:drawableStart="@drawable/time_icon"
+                android:drawablePadding="8dp"
+                android:focusable="false"
+                android:inputType="none"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
